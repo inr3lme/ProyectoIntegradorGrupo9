@@ -51,4 +51,10 @@ GitHub - Repositorio en la nube - Mejor resguardo - Para trabajar en equipo
 ----------------------------------------------------------------------------
 a) Crear cuenta en GitHub
 b) Crear nuevo repositorio en GitHub (Ideal tener igual nombre que la carpeta principal del proyecto)
+c) Linkear mi repositorio local con el de github:
+git remote add origin https://github.com/inr3lme/ProyectoIntegradorGrupo9.git
+d) Subir el proyecto por primera vez.
+git push -u origin master
+e) Subidas siguientes
+git push
 
