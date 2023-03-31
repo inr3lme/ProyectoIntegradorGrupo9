@@ -31,6 +31,24 @@ Iniciar Versionado de un proyecto
 git init --> Inicia en el repositorio local donde estoy parado
 git init mi_repositorio --> indico path completo del directorio principal del proyecto.
 
-GitHub - Repositorio en la nube
--------------------------------
+Chequear Status del Versionado
+------------------------------
+git status
+Vamos a la terminal y con git status chequeamos el estado de nuestro repositorio
+
+Areas de Trabajo del Git
+------------------------
+Lo que armamos en nuestro repositorio --> Working area
+Primer paso del versionado --> Staging area --> git add . (todos) - git add mi_archivo
+Segundo paso del versionado -- > Repositorio del git --> git commit -m "Descripción de lo que hicimos"
+
+Detalle de los commit realizados
+--------------------------------
+git log --> Detalle completo
+git --oneline --> Detalle comprimido
+
+GitHub - Repositorio en la nube - Mejor resguardo - Para trabajar en equipo
+----------------------------------------------------------------------------
+a) Crear cuenta en GitHub
+b) Crear nuevo repositorio en GitHub (Ideal tener igual nombre que la carpeta principal del proyecto)
 
