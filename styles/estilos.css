@@ -1,1 +1,27 @@
 /* aca van los estilos */
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    height: 100%;
+}
+
+body, header, main, footer {
+    border: 3px beige solid;
+    min-height: 50px;
+    margin: 0.5rem;
+    min-width: 400px;
+}
+header {
+    background-color: rgb(216, 190, 240);
+}
+main {
+    min-height: 200px;
+}
+
+.header-menubar {
+    align-content: baseline;
+}

@@ -58,3 +58,5 @@ git push -u origin master
 e) Subidas siguientes
 git push
 
+header Logo Inicio Nosotros Productos Contactate  --> 
+Footer --> Subir
