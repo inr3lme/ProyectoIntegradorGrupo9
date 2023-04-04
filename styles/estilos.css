@@ -18,11 +18,22 @@ body, header, main, footer {
     min-width: 400px;
 }
 
+main {
+    min-height: 200px;
+}
+
+/*---header---*/
+
+.header-logo {
+    background-image: url(../images/header.jpg);
+    height: 340px;
+}
+
+/*-- NavBar---*/
 .logo{
     padding: 10px;
     width: 30%;
     height: 70px;
-    background-color: brown;
     float: left;
     font-size: 30px;
 }
@@ -58,15 +69,17 @@ nav ul li a:hover {
 
     }
 
-main {
-    min-height: 200px;
-}
-
 .header-menubar {
     align-content: baseline;
 }
 
 .nav{
     display:flex;
+    justify-content: space-around;
+}
+
+/*----------Main____________*/
+.Nosotros{
+    display: flex;
     justify-content: space-around;
 }
