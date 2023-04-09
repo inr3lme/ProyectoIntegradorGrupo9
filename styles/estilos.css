@@ -23,11 +23,12 @@ main {
 }
 
 /*---header---*/
-
+/*
 .header-logo {
     background-image: url(../images/header.jpg);
     height: 340px;
 }
+*/
 
 /*-- NavBar---*/
 .logo{
@@ -40,7 +41,6 @@ main {
 .logo a{
     color:rgba(218, 172, 146, 0.795);
     text-decoration: none;
-
 }
 
 nav{
@@ -66,8 +66,7 @@ nav ul li a{
 
 nav ul li a:hover {
         color: black;
-
-    }
+}
 
 .header-menubar {
     align-content: baseline;
