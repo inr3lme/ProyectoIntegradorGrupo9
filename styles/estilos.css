@@ -1,0 +1,311 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+header {
+    position:fixed;
+    width:100%;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter: blur(12.5px);
+    border-radius: 20px 20px 0px 0px;
+    box-shadow:0px 5px 10px rgb(65, 65, 65); 
+    border-style: outset;
+    border-width: 1px 0px 0px;
+    border-color:rgb(86, 86, 86); 
+    border-bottom: 1px solid #FFFFFF20;
+    z-index: 1;
+}
+header::before{
+    content:'';
+    position:absolute;
+    top: 0px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);
+    transition: .5s;
+}
+header:hover::before{
+    left: 100%;
+}
+
+.logo img{
+    position:absolute;
+    width:65px;
+    height:75px;
+    left:55px;
+    top:1px;
+}
+.logo h2{
+    position: absolute;
+    width: 124px;
+    height: 50px;
+    left: 102px;
+    top: 31px;
+    font-family: 'Send Flowers', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+.logo h2 + h2 {
+    position: absolute;
+    width: 124px;
+    height: 50px;
+    left: 100px;
+    top: 30px;
+
+    font-family: 'Send Flowers';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #D12228;
+}
+
+.frame{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0px 129px 0px 0px;
+    gap:55px;
+
+    position: absolute;
+    width: 100%;
+    height: 85px;
+    left: 0px;
+    top: 0px;
+}
+.frame ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+}
+
+.frame a{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    color:#E45927;
+}
+
+.colorSvg{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(100deg) brightness(105%) contrast(101%);
+    width:45px;
+    height:45px;
+    text-align: center;
+    transition: .3s;
+}
+
+.colorSvg:hover{
+    filter: brightness(0) saturate(100%) invert(90%) sepia(75%) saturate(400%) hue-rotate(3deg) brightness(107%) contrast(104%);
+    transform: translate(-3px) scale(1.05);
+}
+.frame a:hover > img{
+    filter: brightness(0) saturate(100%) invert(90%) sepia(75%) saturate(400%) hue-rotate(3deg) brightness(107%) contrast(104%);
+    transform: translate(-3px) scale(1.05);
+}
+
+main > img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 650px;
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+main h1{
+    position: absolute;
+    width: 497px;
+    height: 95px;
+    left: 750px;
+    top: 203px;
+
+    font-family: 'Send Flowers';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #ffffff;
+}
+.textoCatalogo{
+    position: absolute;
+    width: 662px;
+    height: 80px;
+    left: 80px;
+    top: 488px;
+    background: rgba(239, 239, 239, 0.7);
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+.textoCatalogo img{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 10px;
+    top: 1px;
+}
+.textoCatalogo img + img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 40px;
+    top: 10px;
+    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.3));
+}
+
+.textoCatalogo span{
+    position: absolute;
+    width: 587px;
+    height: 56px;
+    left: 75px;
+    top: 5px;
+
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 27px;
+    text-align: center;
+    color: #A0A0A0;
+}
+
+.textoCatalogo span + span{
+    position: absolute;
+    width: 587px;
+    height: 55px;
+    left: 77px;
+    top: 6px;
+
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 27px;
+    text-align: center;
+    color: #571D0E;
+}
+
+.pantallaVentas{
+    box-sizing: border-box;
+    position: absolute;
+    width: 930px;
+    height: 300px;
+    left: 174px;
+    top: 528px;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 120.69%);
+    border: 1px solid rgba(167, 165, 165, 0.5);
+    filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.35));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+
+    font-display: flex;
+    
+}
+.pantallaVentas img:nth-child(1){
+    position: absolute;
+    width: 210px;
+    height: 298px;
+    left: 0px;
+    top: 0px;
+    border-radius: 20px 0px 0px 20px;
+}
+.pantallaVentas img:nth-child(2){
+    position: absolute;
+    width: 419px;
+    height: 296px;
+    left: 216px;
+    top: 1px;
+}
+
+.pantallaVentas img:nth-child(3){
+    position: absolute;
+    width: 287.04px;
+    height: 298px;
+    left: 640px;
+    top: 1px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.cinta1a{
+    position: absolute;
+    width: 100%;
+    height: 48px;
+    left: 0px;
+    top: 1067px;
+    background: #FDC9B1;
+}
+.cinta1b{
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    left: 0px;
+    top: 1131px;
+    background: #E1987E;
+}
+
+.cards{
+    position: relative;
+    width: 100%;
+    height: 352px;
+    left: 0px;
+    top: 950px;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.card1{
+    width: 233px;
+    height: 286px;
+}
+.card1 img{
+    width: 233px;
+    height: 286px;
+    border-radius: 20px;   
+}
+
+.card2{
+    width: 200px;
+    height: 352px;
+}
+.card2 img{
+    width: 200px;
+    height: 352px;
+    border-radius: 20px;
+}
+.card3 {
+    width: 200px;
+    height: 352px;
+}    
+.card3 img{
+    width: 200px;
+    height: 352px;
+    border-radius: 20px;
+}
+.card4 {
+    width: 233px;
+    height: 286px;
+}    
+.card4 img{
+    width: 233px;
+    height: 286px;
+    border-radius: 20px;
+}
