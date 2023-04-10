@@ -6,6 +6,9 @@
     text-decoration: none;
 }
 
+body{
+    background:whitesmoke;
+}
 
 header {
     position:fixed;
@@ -205,10 +208,11 @@ main h1{
 
 .pantallaVentas{
     box-sizing: border-box;
-    position: absolute;
+    margin: 0 auto;
+    position: relative;
     width: 930px;
     height: 300px;
-    left: 174px;
+    /*left: 174px;*/
     top: 528px;
 
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 120.69%);
@@ -267,11 +271,37 @@ main h1{
     width: 100%;
     height: 352px;
     left: 0px;
-    top: 950px;
+    top: 650px;
     
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
+}
+.card{
+    border-radius:20px;
+    box-shadow:2px 5px 20px black;
+    overflow: hidden;
+
+}
+
+.description{
+    box-sizing: border-box;
+    padding: 6px;
+    position: relative;
+    background: rgba(19, 19, 19, 0.5);
+    backdrop-filter: blur(2px);
+    color: white;
+    bottom: 60px;
+    text-align: center;
+    transition: .5s;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .description{
+    bottom:140px;
+    /*background: black;*/
 }
 .card1{
     width: 233px;
