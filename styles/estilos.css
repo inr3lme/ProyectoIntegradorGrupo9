@@ -282,6 +282,13 @@ main h1{
     overflow: hidden;
 
 }
+.card h2{
+    font-family: "Send Flowers";
+    font-size: 1.8rem;
+    font-weight:normal;
+    font-style: italic;
+    line-height: 25px;
+}
 
 .description{
     box-sizing: border-box;
@@ -339,3 +346,4 @@ main h1{
     height: 286px;
     border-radius: 20px;
 }
+
