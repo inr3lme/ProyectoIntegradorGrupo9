@@ -8,6 +8,7 @@
 
 body{
     background:whitesmoke;
+    position: relative;
 }
 
 header {
@@ -206,13 +207,12 @@ main h1{
     color: #571D0E;
 }
 
-.pantallaVentas{
+main .pantallaVentas{
     box-sizing: border-box;
     margin: 0 auto;
     position: relative;
     width: 930px;
     height: 300px;
-    /*left: 174px;*/
     top: 528px;
 
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 120.69%);
@@ -453,4 +453,192 @@ main h1{
 .txtJazmin{
     width: 300px;
     text-align: center;
+}
+
+.formularioContacto{
+    position: absolute;
+    width: 665px;
+    height: 380px;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 1870px;
+    background-color: #382A43;
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+.logoForm{
+    position: absolute;
+    width: 265px;
+    height: 240px;
+    left: -110px;
+    top: 64px;
+    border-radius: 90%;
+    background-color: #D896D2;
+    box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.25), 4px 4px 15px rgba(255, 255, 255, 0.4);
+    box-shadow: -4px 4px 15px 2px rgba(0, 0, 0, 0.25), 4px 4px 15px 2px rgba(255, 255, 255, 0.4);
+}
+.logF{
+    position: absolute;
+    top:-18px;
+    left: 30px;
+    display: flex;
+    align-items: flex-end; 
+    margin: 0;
+    padding: 0;
+}
+.logF img{
+    width: 75px;
+    height: 80px;
+}
+.logF h2{
+    font-family: 'Send Flowers', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+    text-shadow: 1px 2px #81750A;
+    margin-bottom:-6px;
+    margin-left: -20px;
+}
+
+.fondoObscuro{
+    position: absolute;
+    width: 157.44px;
+    height: 238px;
+    left: 85px;
+    top: -12px;
+}
+
+.fondoLogo> img{
+    position: absolute;
+    width: 264px;
+    height: 188.86px;
+    left: 1px;
+    top: 25px;
+
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+}
+
+.headerForm{
+    width:95%;
+    margin-top:10px;
+}
+.imgText{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    font-family: Merri;
+    color: #fff;
+}
+.headerForm img{
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.3));
+}
+
+.textHeaderForm h2:nth-child(1){
+    font-weight: 400;
+    font-size: 35px;
+}
+.textHeaderForm h2:nth-child(2){
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.formulario{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-self:stretch;
+}
+.nombres {
+    width: 340px;
+    height: 75px;
+    margin-left: 240px;
+    margin-top: 8px;
+    font-family: Merri;
+    color: #fff;
+    font-size:15px;
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+
+}
+.nombres input{
+    width:100%;
+    height: 30px;
+    font-size: 15px;
+}
+
+.correo{
+    width: 340px;
+    height: 75px;
+    margin-left: 240px;
+    margin-top: -18px;
+    font-family: Merri;
+    color: #fff;
+    font-size:15px;
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+}
+.correo input{
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+}
+.mensaje{
+    width: 340px;
+    height: 120px;
+    margin-left: 240px;
+    margin-top: -18px;
+    font-family: Merri;
+    color: #fff;
+    font-size:15px;
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+}
+.mensaje textarea{
+    width: 100%;
+    resize: none;
+    font-size: 15px;
+    padding-top: 5px;
+    border-radius: 3px;
+}
+
+.btnFormulario{
+    width: 340px;
+    height: 30px;
+    margin-left: 240px;
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-between;
+    gap:15px;
+}
+.btnFormulario img{
+    width: 20px;
+}
+.btnFormulario button:nth-child(1){
+    width:60%;
+    font-family: Lora;
+    font-size: 15px;
+    border-radius: 50px;
+}
+.btnFormulario button:nth-child(2){
+    width:30%;
+    font-family: Lora;
+    font-size: 15px;
+    border-radius: 50px;
+}
+
+footer{
+position: absolute;
+width: 100%;
+height: 300px;
+top: 2330px;
+background: #433041;
+backdrop-filter: blur(15px);
 }
