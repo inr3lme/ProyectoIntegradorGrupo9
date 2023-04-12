@@ -14,3 +14,7 @@
     font-family: Lora;
     src: url(../Fonts/Lora-Italic-VariableFont_wght.ttf);
 }
+@font-face {
+    font-family: Merri;
+    src: url(../Fonts/Merriweather-Regular.ttf);
+}
