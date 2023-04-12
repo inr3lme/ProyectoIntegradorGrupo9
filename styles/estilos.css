@@ -603,6 +603,7 @@ main .pantallaVentas{
 }
 .mensaje textarea{
     width: 100%;
+    height: 95px;
     resize: none;
     font-size: 15px;
     padding-top: 5px;
