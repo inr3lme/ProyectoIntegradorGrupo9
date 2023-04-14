@@ -638,7 +638,7 @@ main .pantallaVentas{
 footer{
 position: absolute;
 width: 100%;
-height: 300px;
+height: 350px;
 top: 2330px;
 background: #433041;
 backdrop-filter: blur(15px);
@@ -678,7 +678,7 @@ font-family: Lora;
     color: #fff;
 }
 .nosotros h2{
-    font-size:19px;
+    font-size:20px;
 }
 .lineasFooter1{
     display: flex;
@@ -750,22 +750,9 @@ font-family: Lora;
     position: absolute;
     width: 300px;
     height: 300px;
-    left: 850px;
+    left: 380px;
     top: 0px;
-    padding-top:15px;
-    font-family: Lora;
-    color: #fff;
-    font-size: 13px;
-}
-.lineasFooter3{
-    display: flex;
-}
-.lineasFooter3 hr:nth-child(2){
-    width:70%;
-}
-.lineasFooter3 hr:nth-child(1){
-    width:30%;
-    border-color: #fe0000;
+    padding-top: 15px;
 }
 .iconosSociales{
     display: flex;
@@ -777,11 +764,20 @@ font-family: Lora;
     height: 40px;
     filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(100deg) brightness(105%) contrast(101%);filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(100deg) brightness(105%) contrast(101%);
 }
-
 .derechos{
     position: relative;
-    top: 282px;
+    padding: 30px;
+    top: 284px;
     text-align: center;
-    text-decoration: italic;
     color: #fff;
+}
+.lineasFooter3{
+    display: flex;
+}
+.lineasFooter3 hr:nth-child(2){
+    width:70%;
+}
+.lineasFooter3 hr:nth-child(1){
+    width:30%;
+    border-color: #fe0000;
 }

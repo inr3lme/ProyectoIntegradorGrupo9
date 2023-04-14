@@ -6,7 +6,7 @@
 header{
 position:fixed;
 width:100%;
-height: 80px;
+height: 120px;
 left: 0px;
 top: 0px;
 background:rgba(136, 118, 118, 0.534);
@@ -31,9 +31,7 @@ ul {
     font-family: Roboto;
     font-weight: 400;
     font-size: 20px;
-    
-    
-    
+        
 }
 
 .columna {
@@ -55,11 +53,28 @@ img {
     box-shadow:2px 5px 5px rgb(102, 94, 94);
 }
 
-.cinta1b{
+/*.cinta1b{
     position: relative;
     width: 100%;
-    height: 24px;
+    height: 50px;
     left: 0px;
-    top: 1131px;
-    background: #E1987E;
+    top: 1300px;
+    background: #433041;
+}*/
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    top: 1220px;
+    background: #433041;
+    backdrop-filter: blur(15px);
+    font-family: Lora;
+    }
+    
+.derechos{
+    top: 284px;
+    text-align: center;
+    color:aliceblue;
 }
+
