@@ -14,7 +14,7 @@ body{
 header {
     position:fixed;
     width:100%;
-    height: 80px;
+    height: 90px;
     left: 0px;
     top: 0px;
     background:rgba(0,0,0,0.5);
@@ -82,13 +82,13 @@ header:hover::before{
     flex-direction: row;
     justify-content: flex-end;
     padding: 0px 129px 0px 0px;
-    gap:55px;
+    /*gap:55px;*/
 
     position: absolute;
     width: 100%;
     height: 85px;
     left: 0px;
-    top: 0px;
+    top: 10px;
 }
 .frame ul {
     display: flex;
@@ -149,15 +149,27 @@ main h1{
     text-align: center;
     color: #ffffff;
 }
+.pantallaCatalogo{
+    position: relative;
+    width:1068px;
+    height: 380px;
+    left: 0px;
+    margin:0 auto;
+    top:495px;
+    display: flex;
+    justify-content:flex-end;
+}
 .textoCatalogo{
     position: absolute;
     width: 662px;
     height: 80px;
-    left: 80px;
-    top: 488px;
+    /*left: 80px;*/
+    left: 0px;
+    top: 0px;
     background: rgba(239, 239, 239, 0.7);
     box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.8);
     border-radius: 10px;
+    z-index: 1;
 }
 .textoCatalogo img{
     position: absolute;
@@ -167,8 +179,8 @@ main h1{
     top: 1px;
 }
 .textoCatalogo img + img{
-    position: absolute;
-    width: 60px;
+position: absolute;
+width: 60px;
     height: 60px;
     left: 40px;
     top: 10px;
@@ -207,13 +219,13 @@ main h1{
     color: #571D0E;
 }
 
-main .pantallaVentas{
+.pantallaVentas{
+    position: absolute;
     box-sizing: border-box;
-    margin: 0 auto;
-    position: relative;
+    /*margin: 0 auto;*/
     width: 930px;
     height: 300px;
-    top: 528px;
+    top: 35px;
 
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 120.69%);
     border: 1px solid rgba(167, 165, 165, 0.5);
@@ -271,7 +283,7 @@ main .pantallaVentas{
     width: 100%;
     height: 352px;
     left: 0px;
-    top: 650px;
+    top: 560px;
     
     display: flex;
     justify-content: space-evenly;
@@ -284,8 +296,8 @@ main .pantallaVentas{
 
 }
 .card h2{
-    font-family: "Send Flowers";
-    font-size: 1.8rem;
+    font-family: Lora;
+    font-size: 1.45rem;
     font-weight:normal;
     font-style: italic;
     line-height: 25px;
@@ -293,7 +305,7 @@ main .pantallaVentas{
 
 .description{
     box-sizing: border-box;
-    padding: 6px;
+    padding: 8px;
     position: relative;
     background: rgba(19, 19, 19, 0.5);
     backdrop-filter: blur(2px);
@@ -307,8 +319,8 @@ main .pantallaVentas{
     cursor: pointer;
 }
 .card:hover .description{
-    bottom:140px;
-    /*background: black;*/
+    bottom:175px;
+    background: black;
 }
 .card1{
     width: 233px;
@@ -463,7 +475,7 @@ main .pantallaVentas{
     right:0;
     margin-left: auto;
     margin-right: auto;
-    top: 1870px;
+    top: 1950px;
     background-color: #382A43;
     box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
@@ -639,9 +651,8 @@ footer{
 position: absolute;
 width: 100%;
 height: 300px;
-top: 2330px;
+top: 2410px;
 background: #433041;
-backdrop-filter: blur(15px);
 font-family: Lora;
 }
 
@@ -654,7 +665,7 @@ font-family: Lora;
 
     background: #4B0730;
     opacity: 0.5;
-    transform: matrix(1, 0.01, -0.01, 1, 0, 0);
+    
 }
 
 .cinta3a{
@@ -665,11 +676,16 @@ font-family: Lora;
     top: 252px;
 
     background: rgba(217, 217, 217, 0.5);
-    transform: matrix(1, 0.01, -0.01, 1, 0, 0);
+}
+
+.contenidoFooter{
+    position: relative;
+    display:flex;
+    justify-content:space-around;
 }
 
 .nosotros{
-    position: absolute;
+    /*position: absolute;*/
     width: 300px;
     height: 300px;
     left: 77px;
@@ -711,7 +727,7 @@ font-family: Lora;
 }
 
 .direccion{
-    position: absolute;
+    /*position: absolute;*/
     width: 300px;
     height: 300px;
     left: 460px;
@@ -747,7 +763,7 @@ font-family: Lora;
 }
 
 .sociales{
-    position: absolute;
+    /*position: absolute;*/
     width: 300px;
     height: 300px;
     left: 850px;
@@ -779,9 +795,13 @@ font-family: Lora;
 }
 
 .derechos{
-    position: relative;
-    top: 282px;
-    text-align: center;
+    position: absolute;
+    width: 41%;
+    top: 95%;
+    left: 29%;
+    right: 0;
+    margin-left: 0 auto;
+    margin-top: 0 auto;
     text-decoration: italic;
     color: #fff;
 }
