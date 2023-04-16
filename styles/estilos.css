@@ -292,7 +292,7 @@ width: 60px;
 .card{
     border-radius:20px;
     box-shadow:2px 5px 20px black;
-    overflow: hidden;
+    overflow:hidden;
 
 }
 .card h2{
