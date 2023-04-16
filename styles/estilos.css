@@ -650,7 +650,7 @@ width: 60px;
 footer{
 position: absolute;
 width: 100%;
-height: 300px;
+height: 350px;
 top: 2410px;
 background: #433041;
 font-family: Lora;
@@ -661,7 +661,7 @@ font-family: Lora;
     width: 100%;
     height: 24px;
     left: 0px;
-    top: 276px;
+    top: 326px;
 
     background: #4B0730;
     opacity: 0.5;
@@ -673,7 +673,7 @@ font-family: Lora;
     width: 100%;
     height: 28.01px;
     left: 0px;
-    top: 252px;
+    top: 302px;
 
     background: rgba(217, 217, 217, 0.5);
 }
