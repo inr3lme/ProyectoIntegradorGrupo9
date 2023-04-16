@@ -1,72 +1,156 @@
-* {
+*{
+    margin:0;
+    padding: 0;
     box-sizing: border-box;
-    /*background-color:#FDC9B1;*/
+    text-decoration: none;
 }
+header {
+    position:fixed;
+    width:100%;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+    background:rgba(139, 121, 121, 0.5);
+    backdrop-filter: blur(12.5px);
+    border-radius: 20px 20px 0px 0px;
+    box-shadow:0px 5px 10px rgb(65, 65, 65); 
+    border-style: outset;
+    border-width: 1px 0px 0px;
+    border-color:rgb(86, 86, 86); 
+    border-bottom: 1px solid #FFFFFF20;
+    z-index: 1;
+}
+.logo h2{
+    position: absolute;
+    width: 124px;
+    height: 50px;
+    left: 102px;
+    top: 31px;
+    font-family: 'Send Flowers', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+    
+}
+.logo h2 + h2 {
+    position: absolute;
+    width: 124px;
+    height: 50px;
+    left: 100px;
+    top: 30px;
 
-header{
-position:fixed;
-width:100%;
-height: 120px;
-left: 0px;
-top: 0px;
-background:rgba(136, 118, 118, 0.534);
+    font-family: 'Send Flowers';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #D12228;
+}
+.logo img{
+    position:absolute;
+    width:65px;
+    height:75px;
+    left:55px;
+    top:1px;
 }
 
 h1{   
-    font-family: Roboto;
-    color:#E45927;
-    ;
+    font-family: Lora-Variablefont_wght;
+    color:#cc3c08;
     font-weight: 400;
     font-size: 35px;
-    text-align: center;  
+    text-align: center;
+    padding-top: 5px;    
 }
 
-ul {
+
+.frame{
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding: 0px 129px 0px 0px;
+    /*gap:55px;*/
+
+    position: absolute;
+    width: 100%;
+    height: 85px;
+    left: 0px;
+    top: 10px;
+}
+.frame ul {
+    display: flex;
     list-style: none;
-    padding: 0px 80px 0px 0px;
-    gap:55px;
+    gap: 60px;
+}
+
+.frame a{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     font-family: Roboto;
     font-weight: 400;
     font-size: 20px;
-        
+    line-height: 35px;
+    text-align: center;
+    color:#ec561f;
 }
 
+.colorSvg{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(100deg) brightness(105%) contrast(101%);
+    width:45px;
+    height:45px;
+    text-align: center;
+    transition: .3s;
+}
+
+.colorSvg:hover{
+    filter: brightness(0) saturate(100%) invert(90%) sepia(75%) saturate(400%) hue-rotate(3deg) brightness(107%) contrast(104%);
+    transform: translate(-3px) scale(1.05);
+}
+.frame a:hover > img{
+    filter: brightness(0) saturate(100%) invert(90%) sepia(75%) saturate(400%) hue-rotate(3deg) brightness(107%) contrast(104%);
+    transform: translate(-3px) scale(1.05);
+}
+
+.descripcion {
+    padding-top: 100px;
+    display: flex;
+    justify-content:space-between;
+   }
 .columna {
-    float: left;
+    /*border-radius:20px;
+    box-shadow:2px 5px 5px rgb(102, 94, 94);*/
     width: 25%;
-    padding: 5px;
-    padding-top: 120px;
+    height: 1050px;
+    padding: 20px;
     color: #E45927;
     font-family: Roboto;
     font-size: 20px;
-       
+}
+.columna p{
+    padding-top: 20px;
+    
 }
 
 
-img {
+.columna img {
     /* Para que sea responsiva */
     width: 90%;
     border-radius:20px;
     box-shadow:2px 5px 5px rgb(102, 94, 94);
+    display: block;
+    margin: auto;
+    
 }
 
-/*.cinta1b{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    left: 0px;
-    top: 1300px;
-    background: #433041;
-}*/
 
 footer{
     position: absolute;
     width: 100%;
-    height: 70px;
-    top: 1220px;
+    height: 30px;
+    top: 1300px;
     background: #433041;
     backdrop-filter: blur(15px);
     font-family: Lora;
@@ -76,5 +160,6 @@ footer{
     top: 284px;
     text-align: center;
     color:aliceblue;
+    padding-top: 5px;
 }
 
