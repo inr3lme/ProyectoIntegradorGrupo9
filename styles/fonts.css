@@ -18,3 +18,7 @@
     font-family: Merri;
     src: url(../Fonts/Merriweather-Regular.ttf);
 }
+@font-face {
+    font-family: Great;
+    src: url(../Fonts/GreatVibes-Regular.ttf);
+}

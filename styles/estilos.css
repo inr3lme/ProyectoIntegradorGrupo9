@@ -5,7 +5,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background:whitesmoke;
     position: relative;
@@ -19,7 +21,7 @@ header {
     top: 0px;
     background:rgba(0,0,0,0.5);
     backdrop-filter: blur(12.5px);
-    border-radius: 20px 20px 0px 0px;
+    /*border-radius: 20px 20px 0px 0px;*/
     box-shadow:0px 5px 10px rgb(65, 65, 65); 
     border-style: outset;
     border-width: 1px 0px 0px;
@@ -125,30 +127,73 @@ header:hover::before{
     transform: translate(-3px) scale(1.05);
 }
 
-main > img{
+.container2{
+    position:absolute;
+    width: 90%;
+    height: 650px;
+    margin-left: 5%;
+    box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    overflow: hidden;
+    animation: animacion2 150s ease-in-out infinite;
+    background-size:cover;
+}
+
+.exterior{
     position: absolute;
-    top: 0px;
-    left: 0px;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 650px;
-    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.25);
+    background:rgba(0, 0, 0, .4);
     border-radius: 20px;
 }
-main h1{
+@keyframes animacion2 {
+    0%,100%{
+        background-image: url(../images/fondoMain1C.png);
+    }
+    25%{
+        background-image: url(../imgMain/im8.jpeg);
+    }
+    50%{
+        background-image: url(../imgMain/im1.jpeg);
+    }
+    75%{
+        background-image: url(../imgMain/im3.jpeg);
+    }
+}
+
+main > h1 {
     position: absolute;
-    width: 497px;
-    height: 95px;
-    left: 670px;
+    width: 620px;
+    height: 190px;
+    left: 25%;
     top: 203px;
 
-    font-family: 'Send Flowers';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 70px;
-    line-height: 70px;
+    font-family: Great, cursive;
+    font-size: 5em;
     text-align: center;
-    color: #ffffff;
+
+    background: rgb(255,110,162);
+background: linear-gradient(45deg, rgba(255,110,162,1) 0%, rgba(255,255,255,0.8155637254901961) 40%, rgba(89,38,85,1) 100%);
+    
+    letter-spacing: .1em;
+    padding: 7px;
+    -webkit-background-clip: text;
+    -webkit-text-stroke:1px black; color:transparent;
+    animation: animacion 12s ease infinite;
 }
+
+@keyframes animacion {
+    0%{
+        background-position: -620px;
+    }
+
+    100% {
+        background-position: 620px;
+    }
+}
+
 .pantallaCatalogo{
     position: relative;
     width:1068px;
@@ -163,7 +208,6 @@ main h1{
     position: absolute;
     width: 662px;
     height: 80px;
-    /*left: 80px;*/
     left: 0px;
     top: 0px;
     background: rgba(239, 239, 239, 0.7);
@@ -220,36 +264,26 @@ width: 60px;
 }
 
 .pantallaVentas{
-    position: absolute;
+    position: relative;
     box-sizing: border-box;
-    /*margin: 0 auto;*/
     width: 930px;
     height: 300px;
     top: 35px;
 
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 120.69%);
     border: 1px solid rgba(167, 165, 165, 0.5);
-    filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.35));
-    backdrop-filter: blur(10px);
+    filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, .5));
+    backdrop-filter: blur(5px);
     border-radius: 20px;
-
-    font-display: flex;
     
 }
 .pantallaVentas img:nth-child(1){
-    position: absolute;
+    position: relative;
     width: 210px;
     height: 298px;
     left: 0px;
     top: 0px;
     border-radius: 20px 0px 0px 20px;
-}
-.pantallaVentas img:nth-child(2){
-    position: absolute;
-    width: 419px;
-    height: 296px;
-    left: 216px;
-    top: 1px;
 }
 
 .pantallaVentas img:nth-child(3){
@@ -292,7 +326,7 @@ width: 60px;
 .card{
     border-radius:20px;
     box-shadow:2px 5px 20px black;
-    overflow:hidden;
+    overflow: hidden;
 
 }
 .card h2{
@@ -631,6 +665,15 @@ width: 60px;
     justify-content:space-between;
     gap:15px;
 }
+.btnFormulario a{
+    width:60%;
+    font-family: Lora;
+    font-size: 15px;
+    border-radius: 50px;
+    background-color: #fff;
+    text-align: center;
+    color: #000
+}
 .btnFormulario img{
     width: 20px;
 }
@@ -640,12 +683,12 @@ width: 60px;
     font-size: 15px;
     border-radius: 50px;
 }
-.btnFormulario button:nth-child(2){
+/*.btnFormulario button:nth-child(2){
     width:30%;
     font-family: Lora;
     font-size: 15px;
     border-radius: 50px;
-}
+}*/
 
 footer{
 position: absolute;
@@ -685,7 +728,6 @@ font-family: Lora;
 }
 
 .nosotros{
-    /*position: absolute;*/
     width: 300px;
     height: 300px;
     left: 77px;
@@ -727,7 +769,6 @@ font-family: Lora;
 }
 
 .direccion{
-    /*position: absolute;*/
     width: 300px;
     height: 300px;
     left: 460px;
@@ -763,7 +804,6 @@ font-family: Lora;
 }
 
 .sociales{
-    /*position: absolute;*/
     width: 300px;
     height: 300px;
     left: 850px;
