@@ -129,7 +129,8 @@ h1{
 }
 
 .tarjeta{
-     text-align: center;
+    text-align: center;
+    text-shadow: 2px 2px #6c7074;
     width: 300px;
 	height: 450px;
 	background: #f5bc77;
@@ -145,6 +146,7 @@ h1{
 .tarjeta img {
         width: 50%;
         padding-top: 50px;
+        
     
 }
 
@@ -155,10 +157,10 @@ h1{
 }
 
 .tarjeta h1{
-    font-family: 'Montserrat', sans-serif;
+     font-family: 'Montserrat', sans-serif;
     padding: 25px;
     font-size: 25px;
-    color: #d46216;
+    color: #433041;
 }
 .adelante, .atras{
 	width: 100%;
