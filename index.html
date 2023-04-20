@@ -264,15 +264,16 @@
           <h2>Envianos tu Mensaje, estamos para apoyarte!</h2>
         </div>
       </div>
-      <form action="#">
+      <form action="" name="registroDatos" id="registroDatos">
         <div class="formulario">
           <div class="nombres">
             <label for="nombres">Nombres*:</label>
             <input
               type="text"
               name="nombres"
-              id=""
+              id="nombres"
               placeholder="Nombre Completo"
+             required
             />
           </div>
           <div class="correo">
@@ -280,26 +281,29 @@
             <input
               type="email"
               name="correo"
-              id=""
+              id="correo"
               placeholder="Correo Electrónico"
+              required
             />
           </div>
           <div class="mensaje">
             <label for="mensaje">Mensaje</label>
             <textarea
               name="mensaje"
-              id=""
+              id="mensaje"
               cols="30"
               rows="20"
+              maxlength="50";
               resizable="false"
               placeholder="Digite un Mensaje"
+              required
             ></textarea>
           </div>
           <div class="btnFormulario">
-            <button>
+            <button type="submit" id="btnEnviar">
               <img src="./images/email.svg" alt="" /> Enviar Mensaje
             </button>
-            <a href="#inicio"><img src="./images/home.svg" alt="" /> Inicio</a>
+            <a href="#sect"><img src="./images/home.svg" alt="" /> Inicio</a>
           </div>
         </div>
       </form>
@@ -413,5 +417,8 @@
   </div>
 </footer>
 </body>
-<script src="./scripts/script.js"></script>
+  <script src="./scripts/jspdf.min.js"></script>
+  <script src="./scripts/jspdf.debug.js"></script>
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/scriptPdf.js"></script>
 </html>
