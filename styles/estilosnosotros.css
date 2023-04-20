@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 *{
     margin:0;
     padding: 0;
@@ -7,10 +8,10 @@
 header {
     position:fixed;
     width:100%;
-    height: 90px;
+    height: 110px;
     left: 0px;
     top: 0px;
-    background:rgba(139, 121, 121, 0.5);
+    background-color: #433041;
     backdrop-filter: blur(12.5px);
     border-radius: 20px 20px 0px 0px;
     box-shadow:0px 5px 10px rgb(65, 65, 65); 
@@ -24,8 +25,8 @@ header {
     position: absolute;
     width: 124px;
     height: 50px;
-    left: 102px;
-    top: 31px;
+    left: 100px;
+    top: 30px;
     font-family: 'Send Flowers', cursive;
     font-style: normal;
     font-weight: 400;
@@ -41,7 +42,7 @@ header {
     left: 100px;
     top: 30px;
 
-    font-family: 'Send Flowers';
+    font-family: 'Send Flowers' cursive;
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
@@ -57,8 +58,8 @@ header {
 }
 
 h1{   
-    font-family: Lora-Variablefont_wght;
-    color:#cc3c08;
+    font-family: 'Montserrat', sans-serif;
+    color:#e9e0dd;
     font-weight: 400;
     font-size: 35px;
     text-align: center;
@@ -83,6 +84,7 @@ h1{
     display: flex;
     list-style: none;
     gap: 60px;
+    
 }
 
 .frame a{
@@ -94,15 +96,7 @@ h1{
     font-size: 20px;
     line-height: 35px;
     text-align: center;
-    color:#ec561f;
-}
-
-.colorSvg{
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(100deg) brightness(105%) contrast(101%);
-    width:45px;
-    height:45px;
-    text-align: center;
-    transition: .3s;
+    color:#e7dfdb;
 }
 
 .colorSvg:hover{
@@ -114,43 +108,128 @@ h1{
     transform: translate(-3px) scale(1.05);
 }
 
-.descripcion {
+.wrap{
+	width: 100px;
+	margin: 50px auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.tarjeta-wrap{
     padding-top: 100px;
-    display: flex;
-    justify-content:space-between;
-   }
-.columna {
-    /*border-radius:20px;
-    box-shadow:2px 5px 5px rgb(102, 94, 94);*/
-    width: 25%;
-    height: 1050px;
-    padding: 20px;
-    color: #E45927;
-    font-family: Roboto;
-    font-size: 20px;
+	margin: 10px;
+	-webkit-perspective: 800;
+	perspective: 800;
 }
-.columna p{
-    padding-top: 20px;
+
+.tarjeta{
+     text-align: center;
+    width: 300px;
+	height: 450px;
+	background: #f5bc77;
+	position: relative;
+    border-radius:15px;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition: .7s ease;
+	transition: .7s ease;
+	-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+.tarjeta img {
+        width: 50%;
+        padding-top: 50px;
     
 }
 
-
-.columna img {
-    /* Para que sea responsiva */
-    width: 90%;
-    border-radius:20px;
-    box-shadow:2px 5px 5px rgb(102, 94, 94);
-    display: block;
-    margin: auto;
-    
+.tarjeta p{
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+    font-size: 13px;
 }
 
+.tarjeta h1{
+    font-family: 'Montserrat', sans-serif;
+    padding: 25px;
+    font-size: 30px;
+    color: #d46216;
+}
+.adelante, .atras{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+    
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
 
+.adelante p{
+	width: 100%;
+    font-size: 25px;    
+    color: #f6f5f7;
+}
+
+.atras{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	padding: 15px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+        
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	text-align: center;
+	color: #fff;
+	font-family: "open sans";
+    font-size: 15px;
+}
+
+.tarjeta-wrap:hover .tarjeta{
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.card1{
+	background-image: url(img/1.jpg);
+	background-size: cover;
+   
+}
+
+.card2{
+	background-image: url(img/2.jpg);
+	background-size: cover;
+}
+
+.card3{
+	background-image: url(img/3.jpg);
+	background-size: cover;
+}
+.card4{
+	background-image: url(img/3.jpg);
+	background-size: cover;
+}
 footer{
     position: absolute;
     width: 100%;
-    height: 30px;
-    top: 1300px;
+    height: 50px;
+    top: 720px;
     background: #433041;
     backdrop-filter: blur(15px);
     font-family: Lora;
@@ -160,6 +239,5 @@ footer{
     top: 284px;
     text-align: center;
     color:aliceblue;
-    padding-top: 5px;
+    padding-top: 15px;
 }
-

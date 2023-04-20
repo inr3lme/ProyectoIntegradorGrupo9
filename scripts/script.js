@@ -83,3 +83,6 @@ function dotsLabel(){
     }
     dots[index-1].className +=' active';
 }
+
+
+
